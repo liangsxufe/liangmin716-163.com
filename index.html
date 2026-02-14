@@ -81,3 +81,25 @@
             padding: 0;
             transition: all 0.8s ease-in-out 0.3s;
         }
+        .essay-text p {
+            margin-bottom: 16px;
+            text-indent: 2em;
+        }
+        .envelope-box.open {
+            padding: 40px 30px;
+        }
+        .envelope-box.open .envelope-seal {
+            opacity: 0;
+            transform: translateX(-50%) translateY(-50px);
+        }
+        .envelope-box.open #open-btn {
+            opacity: 0;
+            pointer-events: none;
+            height: 0;
+            margin: 0 auto;
+        }
+        .envelope-box.open .essay-text {
+            opacity: 1;
+            height: auto;
+            padding: 10px 0 0;
+        }
